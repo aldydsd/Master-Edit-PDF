@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# NexusPDF - All-in-One Full-Stack PDF Workspace 🚀
+# Master Edit PDF - All-in-One Full-Stack PDF Workspacegit 
 
 NexusPDF adalah aplikasi web modern, berkinerja tinggi, dan serba guna untuk melakukan manipulasi dokumen PDF secara lengkap. Aplikasi ini mencakup fitur penggabungan (merge), kompresi (compress), pemisahan (split), penghapusan halaman, rotasi, penyuntingan visual penuh (full-featured canvas editor), hingga ekstraksi teks otomatis berbasis kecerdasan buatan (**OCR - Optical Character Recognition**) secara dinamis.
 
@@ -127,4 +126,3 @@ Dibuat dengan dedikasi penuh untuk memberikan perkakas manipulasi dokumen terbai
 =======
 # Master-Edit-PDF
 Edit PDF Tools
->>>>>>> 23cc9bdc6119c612ddc4cf2e3affd8fe0f8ab7f8
