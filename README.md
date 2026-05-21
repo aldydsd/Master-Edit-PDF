@@ -2,10 +2,6 @@
 
 NexusPDF adalah aplikasi web modern, berkinerja tinggi, dan serba guna untuk melakukan manipulasi dokumen PDF secara lengkap. Aplikasi ini mencakup fitur penggabungan (merge), kompresi (compress), pemisahan (split), penghapusan halaman, rotasi, penyuntingan visual penuh (full-featured canvas editor), hingga ekstraksi teks otomatis berbasis kecerdasan buatan (**OCR - Optical Character Recognition**) secara dinamis.
 
-Dirancang dengan antarmuka yang sangat elegan, bersih, serta responsif, NexusPDF memberikan pengalaman pengolahan dokumen kelas enterprise langsung dari browser Anda.
-
----
-
 ## ✨ Fitur Unggulan
 
 1. **PDF Editor Visual (Rich Canvas Editor)**:
@@ -27,18 +23,6 @@ Dirancang dengan antarmuka yang sangat elegan, bersih, serta responsif, NexusPDF
    - **Compress**: Menyusutkan ukuran dokumen dengan optimalisasi dpi (tersedia tingkat Extreme, Recommended, dan High Quality).
    - **Delete**: Memotong atau melompati halaman-halaman usang dalam sekejap.
    - **Split**: Membaca dokumen tebal dan memecahkannya menjadi bagian yang terpisah.
-
----
-
-## 🛠️ Arsitektur & Teknologi
-
-- **Frontend**: React 19, TypeScript, Tailwind CSS v4, Motion (Framer Motion).
-- **PDF Engine & Renderer**: `pdf-lib` (untuk rekonstruksi struktur dokumen kustom) & `pdfjs-dist` (untuk rendering canvas PDF interaktif).
-- **Vector Overlay Layer**: `fabric.js` (sebagai engine manipulasi objek grafis).
-- **OCR Engine**: Client-side `tesseract.js` terintegrasi.
-- **Backend & Bundle Tool**: Express.js, TypeScript compiler (`tsx`), Vite, dan `esbuild` untuk optimasi produksi.
-
----
 
 ## 💻 Panduan Instalasi & Menjalankan Aplikasi Secara Lokal
 
@@ -108,21 +92,5 @@ Struktur modul dikemas modular demi menjaga kemudahan pemeliharaan kode (maintai
 ├── package.json                 # Konfigurasi skrip eksekusi dan dependensi modul
 └── README.md                    # Dokumentasi lengkap sistem
 ```
-
----
-
-## 💡 Troubleshooting & FAQ Lokal
-
-- **Mengapa OCR Gagal Memuat Tesseract?**
-  Mesin OCR `tesseract.js` memerlukan koneksi internet pada awal eksekusi pertama untuk mengunduh berkas model pengenalan bahasa (`eng.traineddata`). Pastikan koneksi internet lokal komputer Anda stabil saat menekan tombol OCR pertama kali.
-- **Masalah Port Konflik (EADDRINUSE 3000):**
-  Secara default aplikasi menggunakan port `3000`. Jika port tersebut sudah digunakan untuk aplikasi lain di komputer Anda, silakan ubah variabel `PORT` pada skrip inisialisasi server atau jalankan dengan port kustom ke lingkungan kerja Anda.
-- **Mengapa File PDF Hasil Export Sangat Besar?**
-  Proses penyuntingan gambar di browser menyimpan tatanan aneka layer vektor dalam presisi tinggi. Anda dapat memasukkan file hasil edit kembali ke dasbor utama NexusPDF lalu memilih menu **Compress PDF** untuk mengecilkan kembali ukurannya secara instan.
-
----
-
-Dibuat dengan dedikasi penuh untuk memberikan perkakas manipulasi dokumen terbaik bagi Anda. Jangan ragu berkolaborasi dan memberikan bintang ⭐ di Repositori GitHub Anda!
-=======
 # Master-Edit-PDF
 Edit PDF Tools
